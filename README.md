@@ -11,6 +11,7 @@ To flash main MCU (STM32F042) with LiteSilverware you have to options. Either fl
 * To backup go to dfu-util directory and run (in cmd) dfu-ultil.exe -A 0 -U backup.dfu
 * To flash drag the LiteSilverware.hex file onto flash.bat file in Explorer or use hex2dfu.exe and dfu-util.exe (you'll probably figure out)
 * If the device detects in Windows but dfu-util doesn't detect the device, google "betaflight zadig" and do the same.
+
 ![Alt text](/docs/DFU.jpg?raw=true "Short this to enter DFU mode")
 ## Flashing OSD and VTX
 To flash OSD and VTX you'll need some fine-soldering skills, python and some additional hardware. The hardware can be either an Arduino or C2 adapter from Ebay/Aliexpress. If you have a C2 Adapter please refer to its manual. If you have an Arduino, follow these steps:
@@ -20,7 +21,7 @@ To flash OSD and VTX you'll need some fine-soldering skills, python and some add
 * Connect C2D wire to D2 and C wire to D3 pins of an Arduino. Also connect a GND wire to GND pin.
 * Plug the arduino to USB and check the com port name (something like COM6)
 * Plug a charged battery to the board
-* To backup the original firmware use python read.py <com port name> <filename>
-* To flash use python flash.py <com port name> <filename>
+* To backup the original firmware use `python read.py (com port name) (filename)`
+* To flash use python `flash.py (com port name) (filename)`
 
 ![Alt text](/docs/c2.jpg?raw=true "Fine-soldering pins")
