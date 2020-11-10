@@ -1,9 +1,9 @@
 # BetterLiteV2
-The purpose of this project is to make Betafpv Lite Brushed V2 better. I decided to make it because I was kinda frustrated with its unfinished state. The main reason was that VTX frequency was messed up, it was about 50 MHz ahead of the set frequency. And also I didn't like some words in OSD so I replaced them.
+The purpose of this project is to make Betafpv Lite Brushed V2 better. I decided to make it because I was kinda frustrated with its unfinished state. The main reason was that VTX frequency **in some branches of the board** is about 50 MHz ahead of the set frequency. And also I didn't like some words in OSD so I replaced them.
 This repo contains binary files and flashers zipped in the root directory.
 LiteSilverware repo: https://github.com/vodka-bears/LiteSilverware
 LiteOSD repo: https://github.com/vodka-bears/LiteOSD
-LiteVTX repo: https://github.com/vodka-bears/LiteVTX
+LiteVTX repo: https://github.com/vodka-bears/LiteVTX (only use if your board has a frequency issue)
 efm8-arduino-programmer repo: https://github.com/vodka-bears/efm8-arduino-programmer
 # Flashing
 You can flash any of three components, interface between them hasn't been changed
