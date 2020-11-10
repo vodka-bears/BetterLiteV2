@@ -27,6 +27,6 @@ To flash OSD and VTX you'll need some fine-soldering skills, python and some add
 * Plug the arduino to USB and check the com port name (something like COM6)
 * Plug a charged battery to the board
 * To backup the original firmware use `python read.py (com port name) (filename)`
-* To flash use python `flash.py (com port name) (filename)`
+* To flash use `python flash.py (com port name) (filename)`
 
 ![Alt text](/docs/c2.jpg?raw=true "Fine-soldering pins")
