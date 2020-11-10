@@ -9,8 +9,8 @@ efm8-arduino-programmer repo: https://github.com/vodka-bears/efm8-arduino-progra
 You can flash any of three components, interface between them hasn't been changed
 ## Flashing Silverware
 To flash main MCU (STM32F042) with LiteSilverware you have to options. Either flash it with STLink or via USB in DFU mode. If you prefer STLink you probably know what you're doing. To flash with DFU yo need to follow these steps assuming you use 64-bit Windows (If you use some Linux you'll probably figure out from flash.bat):
-* Download and unzip https://github.com/vodka-bears/BetterLiteV2/tree/master/flasher.zip
-* If you want to backup the original FW proceed to the next step. Connect the board to USB without a battery attached. 
+* Download and unzip https://github.com/vodka-bears/BetterLiteV2/raw/main/dfu-flasher.zip
+* If you want to backup the original FW proceed to the next step. Connect the board to USB without a battery attached.
 * If nothing is detected in Windows or ypu want to backup original firmware, connect the board to USB without a battery attached and with jumper pins shorted with a screwdriver or something (see picture below)
 * Realise that the flash memory on the MCU is probably erased and you can't fly until you reflash it if you didn't short pins.
 * To backup go to dfu-util directory and run (in cmd) dfu-ultil.exe -A 0 -U backup.dfu
